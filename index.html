@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Pendências</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="color-picker">
+      
+      <label for="color1">Personalizar cor:</label>
+      <label for="color1">Cor 1:</label>
+      <input type="color" id="color1" value="#ff0000" />
+
+      <label for="color2">Cor 2:</label>
+      <input type="color" id="color2" value="#008000" />
+    </div>
+    <br /><br /><br />
+    <div class="container">
+      <h1>Lista de Pendências</h1>
+      <h4 style="color: white;">
+        esses registros serão salvos apenas no localStorage de sua maquina
+        servindo apenas de consulta pessoal portanto não tem base de dados
+      </h4 style="color: white;">
+      <form id="taskForm">
+        <div class="ldld">
+          <input
+            type="text"
+            id="taskName"
+            placeholder="Digite a tarefa"
+            required
+          />
+          <input
+            type="date"
+            id="dueDate"
+            placeholder="Data de Entrega (Opcional)"
+          />
+        </div>
+        <button type="submit" id="submitBtn">Adicionar Tarefa</button>
+      </form>
+
+      <h2>Próxima Tarefa</h2>
+      <div id="nextTask"></div>
+      <h2>Todas as Tarefas</h2>
+      <table id="taskTable" border="1">
+        <thead>
+          <tr>
+            <th>Tarefas</th>
+            <th>Data de Entrega</th>
+            <th>Data de Inserção</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- As tarefas serão inseridas dinamicamente aqui -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="tarefa.js"></script>
+  </body>
+</html>
