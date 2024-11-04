@@ -8,21 +8,16 @@
   </head>
   <body>
     <div class="color-picker">
-      
       <label for="color1">Personalizar cor:</label>
       <label for="color1">Cor 1:</label>
-      <input type="color" id="color1" value="#ff0000" />
+      <input type="color" id="color1" value="#138663" />
 
       <label for="color2">Cor 2:</label>
-      <input type="color" id="color2" value="#008000" />
+      <input type="color" id="color2" value="#fff" />
     </div>
     <br /><br /><br />
     <div class="container">
       <h1>Lista de Pendências</h1>
-      <h4 style="color: white;">
-        esses registros serão salvos apenas no localStorage de sua maquina
-        servindo apenas de consulta pessoal portanto não tem base de dados
-      </h4 style="color: white;">
       <form id="taskForm">
         <div class="ldld">
           <input
@@ -44,6 +39,10 @@
       <div id="nextTask"></div>
       <h2>Todas as Tarefas</h2>
       <table id="taskTable" border="1">
+        <h4 style="color: white">
+          esses registros serão salvos apenas no localStorage de sua maquina
+          servindo apenas de consulta pessoal portanto não tem base de dados
+        </h4>
         <thead>
           <tr>
             <th>Tarefas</th>
